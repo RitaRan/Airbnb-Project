@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<style type="text/css">
+    hr {
+       background: url(http://placekitten.com/800/100) no-repeat;
+       border: 0;
+       height: 5px;
+       width: 100%;
+    }
+</style>
+<body class="w3-light-white">
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large" style="background-color: white">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#about" class="w3-button w3-block">About</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#contact" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px" >
+	
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48">
+    <hr>
+    <hr>
+    <h1 class="w3-xxxlarge"><b>Welcome to Toronto</b></h1>
+    <h5>Find a cozy place to stay with more FUN and SAFETY</h5>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="http://24498d124d587d6d18f2-3c1b52779cf969c3b447ef6f76080008.r68.cf1.rackcdn.com/lps/assets/u/Toronto-Sunset-Skyline-2048x1536.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-topmiddle w3-padding-large">
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <ul>
+      <a class="w3-button w3-black w3-padding-large w3-large w3-hover-opacity-min" onclick="document.getElementById('subscribe').style.display='block'" href="{{ url_for('host', checked_amens=check_default, checked_rules=check_default, selected_room_type = select_default, selected_room_num = select_default, selected_bed_num =select_default, selected_guest_num = select_default, inst_bookable = value_default, super_host = value_default, street = address_default['host'][0], district = address_default['host'][1], zip_code = address_default['host'][2])}}">I am a Host</a>
+      <a class="w3-button w3-black w3-padding-large w3-large w3-hover-opacity-min" onclick="document.getElementById('subscribe').style.display='block'" href="{{ url_for('renter', checked_amens= check_default, checked_rules = check_default, address = address_default['renter'], min_price = value_default, max_price = value_default, inst_bookable = value_default, selected_room_type = select_default, selected_bed_num = select_default, selected_guest_num = select_default, lowest_crime_rate = check_default, close_shop = check_default, close_rest = check_default, check_in = date_default, check_out = date_default)}}">I am a Renter</a>
+    </div>
+  </header>
+</div>
+
+<div class="w3-row-padding" id="about">
+  <div class="w3-center w3-padding-64">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team1.jpg" alt="John" style="width:100%"> -->
+      <div class="w3-container">
+        <h3>Ran Zhou</h3>
+        <p class="w3-opacity">这个网页是我写的</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+      <div class="w3-container">
+        <h3>Zhaoxi Zhang</h3>
+        <p class="w3-opacity">搬砖群众</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">-->
+      <div class="w3-container">
+        <h3>Jiahui Wang</h3>
+        <p class="w3-opacity">华尔街之狼</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">-->
+      <div class="w3-container">
+        <h3>狗儿姐姐</h3>
+        <p class="w3-opacity">未来程序媛</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">-->
+      <div class="w3-container">
+        <h3>日日</h3>
+        <p class="w3-opacity">鸡蛋炒洋葱</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-4">
+    <!--
+      <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">-->
+      <div class="w3-container">
+        <h3>Jialei Guo</h3>
+        <p class="w3-opacity">呆萌担当</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-center w3-padding-64" id="contact">
+  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+</div>
+
+<form class="w3-container" action="/action_page.php" target="_blank">
+  <div class="w3-section">
+    <label>Name</label>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+  </div>
+  <div class="w3-section">
+    <label>Email</label>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+  </div>
+  <div class="w3-section">
+    <label>Subject</label>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+  </div>
+  <div class="w3-section">
+    <label>Message</label>
+    <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+  </div>
+  <button type="submit" class="w3-button w3-block w3-black">Send</button>
+</form>
+
+<!-- Footer -->
+<footer class="w3-container w3-white" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+</script>
+
+
+</body>
+</html>
