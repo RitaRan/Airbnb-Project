@@ -26,6 +26,8 @@ build a database-driven website from the ground up. Our group chose to build a w
 
 (3) Yelp data in Toronto (https://www.yelp.com/dataset/documentation/sql)
 
+We did some data preprocessing to create new features and new data tables to be easily loaded into our database. The new tables are in csv format in Data folder.
+
 # How to run the website
 1. To load the database into your machine, you should also download the house_new.csv, crime rate.csv, airdb.sql under ‘Data’ folder in source_code.zip. ‘cd’ to the directory where you save all these three files.
 
