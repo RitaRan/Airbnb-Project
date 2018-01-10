@@ -1,6 +1,6 @@
 # Duke-Airbnbproject
 This is a repository for a group project for COMPSCI 316 'Introduction to Database' at Duke. The goal of this project is to
-build a database-driven website from the ground up. Our group chose to build a website having similar features as Airbnb but we also add additional features that Airbnb does not provide. The features we added are:
+build a database-driven website from the ground up. Our group chose to build a website having similar features as Airbnb but we also added additional features that Airbnb does not provide. The features we added are:
 
 - Adding a section for house hosts to give them price recommendation
 - Adding two new filter options, based on nearby crime rate and based on nearby entertainment, for house renters. These two filter options are accomplished by combining Airbnb data with local crime rate data and Yelp data
